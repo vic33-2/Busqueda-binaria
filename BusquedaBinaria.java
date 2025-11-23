@@ -75,7 +75,7 @@ public class BusquedaBinaria {
         }
     }
 
-    //busqueda binaria
+    
     public static int busquedaBinaria(int[] arr, int dato) {
         int inicio = 0;
         int fin = arr.length - 1;
@@ -92,9 +92,8 @@ public class BusquedaBinaria {
             }
         }
         return -1; 
-    }
+    }  
 
-    //imprime arreglo
     public static void imprimirArray(int[] arr) {
         for (int num : arr) {
             System.out.print(num + " ");
@@ -109,7 +108,8 @@ public class BusquedaBinaria {
                 bw.write(num + "");
                 bw.newLine();
             }
-        } catch (IOException e) {
+        } 
+        catch (IOException e) {
             System.out.println("Error al escribir el archivo: " + e.getMessage());
         }
     }
